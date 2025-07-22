@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "cam_sub=ugv_follower.cam_sub:main"
+            "ugv_follower=ugv_follower.ugv_follower:main"
         ],
     },
 )
