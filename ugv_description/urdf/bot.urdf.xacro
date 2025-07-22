@@ -161,37 +161,39 @@
 
   <link name="camera_link_optical">
   </link>
-<gazebo reference="rgb_camera">
-  <sensor type="camera" name="camera">
-    <always_on>1</always_on>
-    <update_rate>20</update_rate>
-    <visualize>true</visualize>
-    <camera>
-      <horizontal_fov>1.3962634</horizontal_fov>
-      <image>
-        <width>640</width>
-        <height>480</height>
-        <format>R8G8B8</format>
-      </image>
-      <clip>
-        <near>0.1</near>
-        <far>15</far>
-      </clip>
-      <noise>
-        <type>gaussian</type>
-        <mean>0.0</mean>
-        <stddev>0.007</stddev>
-      </noise>
-    </camera>
-    <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
-      <robotNamespace>/</robotNamespace>
-      <cameraName>rgb_camera</cameraName>
-      <frameName>camera_link_optical</frameName>
-      <imageTopicName>camera/image_raw</imageTopicName>
-      <cameraInfoTopicName>camera/camera_info</cameraInfoTopicName>
+  <gazebo reference="rgb_camera">
+    <sensor type="camera" name="camera">
+      <always_on>1</always_on>
+      <update_rate>20</update_rate>
+      <visualize>true</visualize>
+      <camera>
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.1</near>
+          <far>15</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+    <plugin name="ugv_camera_controller" filename="libgazebo_ros_camera.so">
+      <ros>
+        <namespace>/</namespace>
+        <remapping>image_raw:=/ugv_camera/image_raw</remapping>
+        <remapping>camera_info:=/ugv_camera/camera_info</remapping>
+      </ros>
+      <camera_name>rgb_camera</camera_name>
+      <frame_name>camera_link_optical</frame_name>
     </plugin>
-  </sensor>
-</gazebo>
+    </sensor>
+  </gazebo>
 
 
   <link name="laser_link">
