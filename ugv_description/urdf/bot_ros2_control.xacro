@@ -3,14 +3,10 @@
 
     <ros2_control name="RobotSystem" type="system">
 
-        <!-- ros2_control Gazebo -->
-        <!-- ROS 2 Humble -->
         <hardware>
-            <plugin>ign_ros2_control/IgnitionSystem</plugin>
+            <plugin>gazebo_ros2_control/GazeboSystem</plugin>
         </hardware>
-    
-        <!-- ros2_control Common Interfaces --> 
-        <!-- Front right wheel -->
+
         <joint name="wheel_front_right_joint">
             <command_interface name="velocity">
               <param name="min">-10</param>
@@ -20,7 +16,6 @@
             <state_interface name="velocity" /> 
         </joint>
 
-        <!-- Front left wheel -->
         <joint name="wheel_front_left_joint">
             <command_interface name="velocity">
               <param name="min">-10</param>
@@ -30,7 +25,6 @@
             <state_interface name="velocity" />
         </joint>
         
-        <!-- Back right wheel -->
         <joint name="wheel_back_right_joint">
             <command_interface name="velocity">
               <param name="min">-10</param>
@@ -40,7 +34,6 @@
             <state_interface name="velocity" /> 
         </joint>
 
-        <!-- Back left wheel -->
         <joint name="wheel_back_left_joint">
             <command_interface name="velocity">
               <param name="min">-10</param>
@@ -50,8 +43,16 @@
             <state_interface name="velocity" />
         </joint>
 
-        
-        
     </ros2_control>
+
+
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+            <parameters>$(find ugv_description)/config/ugv_controller.yaml</parameters>
+            <ros>
+                <namespace>/</namespace>
+            </ros>
+        </plugin>
+    </gazebo>
 
 </robot>
