@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "ugv_follower=ugv_follower.ugv_follower:main"
+            "ugv_follower=ugv_follower.ugv_follower:main",
+            "detection = ugv_follower.detection:main",
         ],
     },
 )
