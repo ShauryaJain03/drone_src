@@ -4,7 +4,7 @@ This project enables **coordinated surveillance and reconnaissance** with a semi
 
 ## Features
 
-- **Keyboard Teleoperation**: Control the UAV in simulation using simple keyboard commands.
+- **Keyboard Teleoperation**: Control the UAV in simulation using simple keyboard commands (adapted from https://github.com/monemati/PX4-ROS2-Gazebo-YOLOv8/)
 - **PX4 SITL Integration**: Seamless interfacing with PX4 Autopilot for reliable flight control and SITL simulation.
 - **ROS2 Modular Design**: Nodes for drone control, camera streaming, object detection, and inter-robot data exchange.
 - **UGV Integration**: Ready to work with ROS2-based UGV ([armybot_diff_drive](https://github.com/ShauryaJain03/armybot_diff_drive)).
