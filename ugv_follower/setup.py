@@ -22,6 +22,8 @@ setup(
         'console_scripts': [
             "ugv_follower=ugv_follower.ugv_follower:main",
             "detection = ugv_follower.detection:main",
+            "track = ugv_follower.track:main",
+
         ],
     },
 )
