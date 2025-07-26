@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "ugv_follower=ugv_follower.ugv_follower:main",
+            "offboard=ugv_follower.offboard:main",
             "detection = ugv_follower.detection:main",
             "track = ugv_follower.track:main",
 
