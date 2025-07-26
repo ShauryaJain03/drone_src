@@ -9,23 +9,22 @@ This project enables **coordinated surveillance and reconnaissance** with a semi
 - **ROS2 Modular Design**: Nodes for drone control, camera streaming, object detection, and inter-robot data exchange.
 - **UGV Integration**: Ready to work with ROS2-based UGV ([armybot_diff_drive](https://github.com/ShauryaJain03/armybot_diff_drive)).
 - **Camera Feed Processing**: Access and process UAV camera stream directly in ROS2 (for detection, tracking, etc.).
+- UGV Spawned with the UAV in a custom world to test following modules and enable data sharing
 
-### Usage
+### Demo
 
-Images to be updated soon
 
 <!-- Contributing -->
 ### Contributing
 
 This repository is not open to contributions.
 
-<!-- CONTACT -->
 ### Contact
 
-Shaurya Jain - Reach me at jainshaurya.sj@gmail.com
 
 <!-- ACKNOWLEDGMENTS -->
 ### Acknowledgments
+
 
 Centre of Intelligent Robotics IIITA, Dr. Surya Prakash
 
