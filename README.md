@@ -11,13 +11,18 @@ This project enables **coordinated surveillance and reconnaissance** with a semi
 - **Camera Feed Processing**: Access and process UAV camera stream directly in ROS2 (for detection, tracking, etc.).
 - UGV Spawned with the UAV in a custom world to test following modules and enable data sharing
 
+
 ### Demo
 
 **PX4-ROS2-Gazebo-YOLOV8 Demo**
 
 https://github.com/user-attachments/assets/20af554c-9697-4ca7-9bf0-ea51a77bed75
 
-Object detection using yolov8 in custom sonoma world
+
+**Spawning UGV and UAV together in the custom world**
+
+https://github.com/user-attachments/assets/9b09fde4-1313-4f89-9553-eebe95ab6caf
+
 
 <!-- Contributing -->
 ### Contributing
