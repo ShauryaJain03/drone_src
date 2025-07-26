@@ -12,7 +12,12 @@ This project enables **coordinated surveillance and reconnaissance** with a semi
 - UGV Spawned with the UAV in a custom world to test following modules and enable data sharing
 
 ### Demo
-[Watch the demo video](uav_yolo.mp4)
+
+**PX4-ROS2-Gazebo-YOLOV8 Demo**
+
+https://github.com/user-attachments/assets/20af554c-9697-4ca7-9bf0-ea51a77bed75
+
+Object detection using yolov8 in custom sonoma world
 
 <!-- Contributing -->
 ### Contributing
@@ -24,6 +29,9 @@ This repository is not open to contributions.
 
 <!-- ACKNOWLEDGMENTS -->
 ### Acknowledgments
+
+
+
 
 
 Centre of Intelligent Robotics IIITA, Dr. Surya Prakash
