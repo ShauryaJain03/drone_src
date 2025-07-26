@@ -12,7 +12,7 @@ This project enables **coordinated surveillance and reconnaissance** with a semi
 - UGV Spawned with the UAV in a custom world to test following modules and enable data sharing
 
 ### Demo
-
+[Watch the demo video](uav_yolo.mp4)
 
 <!-- Contributing -->
 ### Contributing
